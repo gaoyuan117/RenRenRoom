@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/touch_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <com.justwayward.renren.view.LetterView
+        android:id="@+id/letter_view"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_source_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="biaoti"
+            android:textColor="@color/common_h1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_source_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="neirong"
+            android:textColor="@color/common_h3"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

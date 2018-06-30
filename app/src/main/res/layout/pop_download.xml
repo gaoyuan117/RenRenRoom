@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_down_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/global_back"
+        android:drawablePadding="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:text="章节下载"
+        android:textColor="@color/global"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_assets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_gv"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="后20章"
+                android:textColor="@drawable/select_text_black_color" />
+
+            <ImageView
+                android:id="@+id/img_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/discount1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_gv"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="后50章"
+                android:textColor="@drawable/select_text_black_color" />
+
+            <ImageView
+                android:id="@+id/img_50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/discount2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_gv"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="后100章"
+                android:textColor="@drawable/select_text_black_color" />
+
+            <ImageView
+                android:id="@+id/img_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/discount3" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_gv"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="剩余"
+                android:textColor="@drawable/select_text_black_color" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_down_chapter_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="·免费/已购章节：0章"
+            android:textColor="@color/light_gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_down_chapter_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="·付费章节：0章"
+            android:textColor="@color/light_gray"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_down_chapter_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="·折扣：0折"
+            android:textColor="@color/light_gray"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="·应付："
+            android:textColor="@color/light_gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_down_old_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0金豆"
+            android:textColor="@color/light_gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_down_real_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="0金豆"
+            android:textColor="@color/global"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_down_yue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="·余额：0金豆"
+            android:textColor="@color/light_gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_down_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="刷新"
+            android:textColor="@color/global"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_down_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/coner_global"
+        android:gravity="center"
+        android:text="确认下载"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+
+    <SinaWeibo
+        Id="1"
+        SortId="1"
+        AppKey="2677105146"
+        AppSecret="691dd6c6b4d1faf7528ea074d8c09a6e"
+        RedirectUrl="http://novel.jzbwlkj.com/"
+        ShareByAppClient="true"
+        Enable="true" />
+
+
+    <QZone
+        Id="3"
+        SortId="3"
+		AppId="1106596041"
+		AppKey="9THI23ktRWS2IGf9"
+		BypassApproval="false"
+        Enable="true" />
+
+    <Wechat
+        Id="4"
+        SortId="4"
+        AppId="wxd3e33762e921be58"
+        AppSecret="cbdf86bf296f1c84f2636685ea831d43"
+		UserName="gh_afb25ac019c9"
+		Path="pages/index/index.html?id=1"
+        BypassApproval="false"
+        Enable="true" />
+
+    <WechatMoments
+        Id="5"
+        SortId="5"
+        AppId="wxd3e33762e921be58"
+        AppSecret="cbdf86bf296f1c84f2636685ea831d43"
+        BypassApproval="false"
+        Enable="true" />
+
+	<WechatFavorite
+        Id="6"
+        SortId="6"
+        AppId="wxd3e33762e921be58"
+        AppSecret="cbdf86bf296f1c84f2636685ea831d43"
+        Enable="true" />
+
+	<QQ
+        Id="7"
+        SortId="7"
+		AppId="1106596041"
+		AppKey="9THI23ktRWS2IGf9"
+		BypassApproval="false"
+        ShareByAppClient="true"
+        Enable="true" />
+
+
+
+</DevInfor>

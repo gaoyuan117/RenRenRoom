@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_buy_pop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/reader_menu_bg_color"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_pop_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/reader_menu_bg_color"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="14dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="6dp"
+                android:paddingTop="14dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/img_pop_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/ab_back" />
+
+                <TextView
+                    android:id="@+id/tv_pop_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:visibility="visible"
+                    tools:text="武侠世界自由行" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="22dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="关闭"
+                android:textColor="@color/global"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="22dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="10dp"
+                android:text="目录"
+                android:textColor="@color/global"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:drawableLeft="@drawable/arrow_left"
+                android:drawablePadding="4dp"
+                android:id="@+id/tv_pre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="22dp"
+                android:padding="10dp"
+                android:text="上一章"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="本章节是付费章节" />
+
+            <TextView
+                android:drawableRight="@drawable/arrow_right"
+                android:drawablePadding="4dp"
+                android:id="@+id/tv_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="22dp"
+                android:padding="10dp"
+                android:text="下一章"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:text="价格：0金豆"
+            android:textColor="@color/light_black" />
+
+        <TextView
+            android:id="@+id/tv_yue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:text="余额：0金豆"
+            android:textColor="@color/light_black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_vip"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/coner_global"
+                android:gravity="center"
+                android:text="开通会员"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/bt_buy"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/coner_global"
+                android:gravity="center"
+                android:text="订阅本章"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_auto_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/select_pay"
+            android:padding="20dp"
+            android:text="以后不再提示我，自动购买下一章"
+            android:textColor="@color/light_black" />
+    </LinearLayout>
+
+</LinearLayout>
